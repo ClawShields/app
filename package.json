@@ -1,0 +1,25 @@
+{
+  "name": "clawshield",
+  "version": "1.0.0",
+  "description": "Private shielded transactions for AI agents on Solana via Zero-Knowledge proofs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "cp node_modules/@lightprotocol/hasher.rs/dist/hasher_wasm_simd_bg.wasm public/hasher_wasm_simd_bg.wasm || true && cp node_modules/privacycash/circuit2/transaction2.wasm public/circuit2.wasm || true && cp node_modules/privacycash/circuit2/transaction2.zkey public/circuit2.zkey || true"
+  },
+  "dependencies": {
+    "@lightprotocol/hasher.rs": "^0.2.1",
+    "@solana/web3.js": "^1.98.4",
+    "next": "16.1.6",
+    "privacycash": "^1.1.20",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}

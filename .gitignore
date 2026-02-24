@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+!.env.example
+public/hasher_wasm_simd_bg.wasm
+public/circuit2.wasm
+public/circuit2.zkey
+*.tsbuildinfo
+next-env.d.ts
+.vercel
