@@ -30,20 +30,20 @@ OpenClaw / AI agents can **receive** money on Solana. But when they need to **se
 
 ```
 ┌─────────────┐     1. Request unsigned tx     ┌──────────────┐
-│             │ ──────────────────────────────► │              │
-│   AI Agent  │     2. Return unsigned tx       │  ClawShield  │
-│  (keys stay │ ◄────────────────────────────── │    Server    │
-│   local)    │     3. Sign locally, submit     │              │
-│             │ ──────────────────────────────► │   ┌──────┐   │
-└─────────────┘     4. Relay to Solana          │   │ ZK   │   │
-                                                │   │Proof │   │
-                    5. Funds arrive privately    │   └──────┘   │
-                    (unlinkable to deposit)      └──────┬───────┘
-                                                       │
-                                                       ▼
+│             │ ──────────────────────────────►│              │
+│   AI Agent  │     2. Return unsigned tx      │  ClawShield  │
+│  (keys stay │ ◄──────────────────────────────│    Server    │
+│   local)    │     3. Sign locally, submit    │              │
+│             │ ──────────────────────────────►│   ┌──────┐   │
+└─────────────┘     4. Relay to Solana         │   │ ZK   │   │
+                                               │   │Proof │   │
+                    5. Funds arrive privately  │   └──────┘   │
+                    (unlinkable to deposit)    └──────┬───────┘
+                                                      │
+                                                      ▼
                                                  ┌──────────┐
-                                                 │  Solana   │
-                                                 │ mainnet   │
+                                                 │  Solana  │
+                                                 │ mainnet  │
                                                  └──────────┘
 ```
 
