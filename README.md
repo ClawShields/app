@@ -55,19 +55,15 @@ OpenClaw / AI agents can **receive** money on Solana. But when they need to **se
 
 <br />
 
-## Install as an OpenClaw Skill
+## Install Skill
+
+Add ClawShield to any OpenClaw-compatible agent:
 
 ```bash
 curl -sL https://clawshield.network/skill.md -o skills/claw-shield.md
 ```
 
-Or fetch the skill definition directly:
-
-```bash
-curl -sL https://clawshield.network/skill.md
-```
-
-That's it. Your agent can now shield and withdraw SOL, USDC, and USDT privately.
+Your agent can now shield and withdraw SOL, USDC, and USDT privately.
 
 <br />
 
